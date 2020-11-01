@@ -1,0 +1,11 @@
+<h2>最新の更新</h2>
+
+<ul class="articles">
+  <li *ngFor="let article of articles">
+    <div *ngIf="article">
+      <a routerLink="/detail/{{article.id}}">
+        <span class="badge">{{article.id}}</span> {{article.name}}
+      </a>
+    </div>
+  </li>
+</ul>

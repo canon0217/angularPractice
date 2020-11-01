@@ -1,0 +1,10 @@
+<h2>"プレゼンテーション"に関する最新の投稿</h2>
+<ul class="articles">
+  <li *ngFor="let article of articles">
+    <div *ngIf="article.id == 7">
+      <a routerLink="/detail/{{article.id}}">
+        {{article.name}}
+      </a>
+    </div>
+  </li>
+</ul>
